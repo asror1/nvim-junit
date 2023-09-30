@@ -48,6 +48,7 @@ function M.generate_test(args)
         local test_buf = io.open(tfmdata.apath, "w")
         if test_buf ~= nil then
             -- TODO: use template loader
+
             vim.ui.select(
                 { "JUnit 5 (Standard)", "Mockito", "Spring" },
                 { prompt = "Please choose test template" },
